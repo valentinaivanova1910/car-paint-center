@@ -1,5 +1,7 @@
-html {
+* {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 *,
 *::after,
@@ -25,7 +27,7 @@ img {
 .contaier {
   max-width: 1440;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0;
 }
 body {
   margin: 0 auto;
@@ -38,6 +40,7 @@ body {
   background-image: url(./images/Mask\ group.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 900px;
 }
 .header {
   border-bottom: 2px solid rgba(255, 255, 255, 1);
@@ -54,34 +57,37 @@ body {
 .contaier {
   padding-left: 255px;
   padding-right: 690px;
+  margin: 0 auto;
 }
 .top {
   /* background-image: url(./images/Mask\ group.jpg); */
 }
 .title {
   padding-top: 180px;
-  margin-bottom: 17px;
   font-family: Roboto;
   font-size: 48px;
   font-weight: 400;
   line-height: 56px;
   letter-spacing: 0em;
   text-align: left;
+  margin: 0 auto;
 }
 .subtitle {
-  margin-bottom: 50px;
+  padding-top: 17px;
+  padding-bottom: 50px;
   font-family: Roboto;
   font-size: 28px;
   font-weight: 400;
   line-height: 33px;
   text-align: left;
+  margin: 0 auto;
 }
 p {
+  padding-top: 20px;
   font-family: Arial;
   font-size: 16px;
-  font-weight: 400;
   line-height: 18px;
-  text-align: left;
+  margin: 0 auto;
 }
 .red {
   color: rgba(237, 113, 115, 1);
@@ -157,4 +163,124 @@ p {
   height: 120px;
   border: 2px solid rgba(255, 255, 255, 1);
   padding: 15px 52px 15px 59px;
+}
+.information {
+  margin: 0 auto;
+  padding: 90px 273px 90px 285px;
+  background: rgba(255, 255, 255, 1);
+  color: rgba(37, 37, 37, 1);
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: center;
+}
+.information-title {
+  font-family: Roboto;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 63px;
+  text-align: center;
+  color: rgba(231, 231, 231, 1);
+  margin: 0 auto;
+}
+.information__text {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 150px 150px;
+  position: relative;
+}
+.information-subtitle {
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: center;
+}
+.information__colum {
+  max-width: 405px;
+}
+.information__info {
+  text-align: start;
+}
+.information__img {
+  position: absolute;
+}
+
+.footer__title {
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 33px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  padding: 80px 285px 62px 285px;
+}
+
+#form {
+  max-width: 700px;
+  padding-right: 350px;
+  padding-bottom: 90px;
+  box-sizing: border-box;
+}
+.form-field {
+  display: flex;
+  margin: 0 0 20px 0;
+  width: 360px;
+  height: 44px;
+  border-radius: 4px;
+}
+label,
+input {
+  width: 70%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  justify-content: space-between;
+  font-size: 1.1rem;
+}
+label {
+  text-align: right;
+  width: 30%;
+}
+input {
+  border: 2px solid #aaa;
+  border-radius: 2px;
+}
+input.valid {
+  box-shadow: 0px 0px 10px green;
+}
+input.invalid {
+  box-shadow: 0px 0px 10px red;
+}
+.footer__conteiner {
+  background-image: url(./images/Подложка\ 1\ экран.jpg);
+  background-image: url(./images/footer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer__conteiners {
+  display: flex;
+  justify-content: center;
+}
+.footer__pushBtn {
+  padding-left: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__btn {
+  border: 2px solid rgba(255, 255, 255, 1);
+  width: 170px;
+  height: 44px;
+  background: linear-gradient(0deg, #000000, #000000);
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  border-radius: 4px;
+  margin-top: 32px;
+  margin-bottom: 150px;
 }
