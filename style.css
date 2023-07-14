@@ -37,31 +37,34 @@ body {
   line-height: 18.4px;
   color: rgba(255, 255, 255, 1);
   background: rgb(143, 113, 175);
+}
+.header {
   background-image: url(./images/Mask\ group.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 900px;
-}
-.header {
-  border-bottom: 2px solid rgba(255, 255, 255, 1);
-  padding: 0 40px;
 }
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 92px;
+  padding: 0 40px;
 }
-.list {
+.logo {
+  padding-left: 40px;
 }
-.contaier {
-  padding-left: 255px;
-  padding-right: 690px;
-  margin: 0 auto;
+.menu__telephone {
+  padding-right: 40px;
 }
-.top {
-  /* background-image: url(./images/Mask\ group.jpg); */
+hr {
+  border: 2px solid rgba(255, 255, 255, 1);
+  width: 100%;
 }
+.contaiers {
+  padding-left: 225px;
+  padding-right: 650px;
+}
+
 .title {
   padding-top: 180px;
   font-family: Roboto;
@@ -124,14 +127,14 @@ p {
   color: rgba(255, 255, 255, 1);
 }
 .advantage {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   padding: 164px 183px 50px 177px;
   text-align: center;
   font-family: Arial;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
+  gap: 125px;
 }
 .advantage-1 {
   display: flex;
@@ -141,7 +144,7 @@ p {
   width: 276px;
   height: 120px;
   border: 2px solid rgba(255, 255, 255, 1);
-  padding: 15px 79px 15px 73px;
+  gap: 14px;
 }
 
 .advantage-2 {
@@ -152,7 +155,7 @@ p {
   width: 276px;
   height: 120px;
   border: 2px solid rgba(255, 255, 255, 1);
-  padding: 15px 18px 15px 20px;
+  gap: 14px;
 }
 .advantage-3 {
   display: flex;
@@ -162,11 +165,11 @@ p {
   width: 276px;
   height: 120px;
   border: 2px solid rgba(255, 255, 255, 1);
-  padding: 15px 52px 15px 59px;
+  gap: 14px;
 }
 .information {
   margin: 0 auto;
-  padding: 90px 273px 90px 285px;
+  padding: 62px 273px 90px 285px;
   background: rgba(255, 255, 255, 1);
   color: rgba(37, 37, 37, 1);
   font-family: Arial;
@@ -185,9 +188,9 @@ p {
   margin: 0 auto;
 }
 .information__text {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 150px 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   position: relative;
 }
 .information-subtitle {
@@ -196,6 +199,7 @@ p {
   font-weight: 400;
   line-height: 23px;
   text-align: center;
+  padding-bottom: 10px;
 }
 .information__colum {
   max-width: 405px;
@@ -203,10 +207,64 @@ p {
 .information__info {
   text-align: start;
 }
-.information__img {
+.information__1234 {
   position: absolute;
+  font-family: Roboto;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 117px;
+  color: rgba(231, 231, 231, 1);
+}
+.section__benefit {
+  padding: 62px 161px 90px 160px;
+  background-image: url(./images/section__benefit.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+h2 {
+  font-family: Roboto;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 63px;
+  text-align: center;
+}
+.benefit-subtitle {
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 60px;
+}
+.benefit__desc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.benefit__title {
+  background: rgba(255, 255, 255, 1);
+  max-width: 211px;
+  max-height: 211px;
+  border-radius: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  padding-top: 40px;
+  padding-bottom: 18px;
+  gap: 30px;
+}
+.benefit__text {
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgba(37, 37, 37, 1);
+}
 .footer__title {
   font-family: Roboto;
   font-size: 28px;
@@ -283,4 +341,21 @@ input.invalid {
   border-radius: 4px;
   margin-top: 32px;
   margin-bottom: 150px;
+}
+.menu__infoFooter {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 18px 160px;
+}
+
+.menu__list {
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.conteiner__footerNav {
+  background: rgba(64, 64, 64, 1);
 }
