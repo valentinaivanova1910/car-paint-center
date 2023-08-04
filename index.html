@@ -3,18 +3,18 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width" meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
+    <div class="container">
+        <header class="header">
             <nav class="nav">
-
-                <img class="logo" src="./images/logo.svg" alt="">
-                <ul>
+                <img class="logo__header" src="./images/logo.svg" alt="">
+                <ul class="nav__list">
                     <li class="menu__list">
                         <a class="menu__link" href="#">Главная</a>
                     </li>
@@ -27,289 +27,294 @@
                     <li class="menu__list">
                         <a class="menu__link" href="#">Контакты</a>
                     </li>
+                    <div class="adress">
+                        <img src="./images/Иконка.svg" alt="">
+                        <a class="menu__adress" href="#">Москва, Ленинградское шоссе 29-35</a>
+                    </div>
+                    <div class="telephone">
+                        <a class="menu__telephones" href="#">+7 (901) 704-13-44</a>
+                        <a class="menu__telephone--2" href="#"> +7 (916) 780-22-59</a>
+                    </div>
                 </ul>
-                <div class="adress">
-                    <img src="./images/Иконка.svg" alt="">
-                    <a class="menu__adress" href="#">Москва, Ленинградское шоссе 29-35</a>
-                </div>
-                <div class="telephone">
-                    <a class="menu__telephone" href="#">+7 (901) 704-13-44</a>
-                </div>
             </nav>
+            <div class="burger__menu">
+                <span></span>
+            </div>
             <hr>
             <div class="contaiers">
                 <h1 class="title">Кузовной ремонт любой сложности</h1>
                 <p class="subtitle">на Ленинградском шоссе в Москве</p>
-                <div class="div"><button class="btn__application">
+                <div class="div">
+                    <button class="btn__application">
                         Оставить заявку
                     </button>
                     <button class="btn__price">
                         Оценить стоимоть ремонта по фото
                     </button>
                 </div>
-                <p class="top__text">Оставляйте заявку сейчас и получите <span class="red">10 % скидку</span> на
+                <p class="top__text">Оставляйте заявку сейчас <br> и получите <span class="red">10 % скидку</span> на
                     покраску</p>
             </div>
-
             <div class="advantage">
                 <div class="advantage-1">
                     <img class="img__advantage" src="./images/advantage-1.svg" alt="">
+                    <img class="img__advantage--bleak" src="./images/Иконка 4.1.svg" alt="">
                     <span>Гарантия 1 год</span>
                 </div>
                 <div class="advantage-2">
                     <img class="img__advantage" src="./images/advantage-2.svg" alt="">
-                    <span>Делаем как для себя:
-                        качественно и без переплат</span>
+                    <img class="img__advantage--bleak" src="./images/Иконка 2 bleak.svg" alt="">
+                    <span>Делаем как для себя: <br> качественно и без переплат</span>
                 </div>
                 <div class="advantage-3">
                     <img class="img__advantage" src="./images/advantage-3.svg" alt="">
-                    <span>Салон расположен
-                        в пределах МКАД </span>
+                    <img class="img__advantage--bleak" src="./images/Иконка 1.1.svg" alt="">
+                    <span>Салон расположен <br> в пределах МКАД </span>
                 </div>
             </div>
-        </div>
-    </header>
-    <main class="main">
+        </header>
+        <main class="main">
+            <section class="information">
+                <h2 class="information-title">Подробнее о Центре Автопокраски</h2>
+                <p class="information-subtitle">Полное или частичное восстановление ЛКП за короткие сроки и с гарантией
+                    качества</p>
+                <div class="information__text">
+                    <div class="information__colum">
+                        <span class="information__1">01</span>
+                        <p class="information__info">Уже 6 лет мы занимаемся качественным
+                            восстановлением машин от повреждений разной сложности. Рейтинг нашей мастерской на Яндексе
+                            составляет 4,5.</p>
+                    </div>
+                    <div class="information__colum">
+                        <span class="information__2">02</span>
+                        <p class="information__info">Заметили следы естественного износа?
+                            Мы легко удалим царапины, вмятины, коррозию и ржавчину, которые могут изрядно подпортить
+                            внешний
+                            вид автомобиля.
+                        </p>
+                    </div>
+                    <div class="information__colum">
+                        <span class="information__3">03</span>
+                        <p class="information__info">Попали в ДТП и хотите сохранить вид вашего авто? Исправим
+                            повреждения
+                            за короткий срок!</p>
+                    </div>
+                    <div class="information__colum">
+                        <span class="information__4">04</span>
+                        <p class="information__info">Использование качественных материалов: Sikkens, Akzo, Nobel,
+                            Brulex,
+                            3M, Car System, Body Reoflex, позволяет сохранить результат работы надолго. Гарантия на все
+                            виды
+                            работ составляет 1 год.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="benefit">
+                <h2>Выгоды</h2>
+                <p class="benefit-subtitle">Ваш автомобиль будет блестеть как после покупки, а вы будете довольны
+                    выбором</p>
+                <div class="benefit__desc">
+                    <div class="benefit__title">
+                        <img class="img__benefit" src="./images/Иконка 1.1.svg" alt="">
+                        <span class="benefit__text">Удобная локация на Ленинградском шоссе
+                        </span>
+                    </div>
+                    <div class="benefit__title">
+                        <img class="img__benefit" src="./images/Иконка 2.1.svg" alt="">
+                        <span class="benefit__text">Осмотр автомобиля производится бесплатно</span>
+                    </div>
+                    <div class="benefit__title">
+                        <img class="img__benefit" src="./images/Иконка 3.1.svg" alt="">
+                        <span class="benefit__text">Для вашего удобства возможен наличный и безналичный расчет </span>
+                    </div>
+                    <div class="benefit__title">
+                        <img class="img__benefit" src="./images/Иконка 4.1.svg" alt="">
+                        <span class="benefit__text">Работаем по заказ-наряду с предоставлением гарантийных обязательств
+                        </span>
+                    </div>
+                    <div class="benefit__title">
+                        <img class="img__benefit" src="./images/Иконка 5.1.svg" alt="">
+                        <span class="benefit__text">Для юридических лиц возможна оплата переводом на расчётный счёт
+                        </span>
+                    </div>
+                </div>
+            </section>
+            <section class="services">
+                <h3 class="services-title">Услуги</h3>
+                <p class="services-subtitle">Помимо нанесения лакокрасочных покрытий вы можете получить
+                    услуги по ремонту и вернуть своей "ласточке" заводской вид</p>
+                <div class="services__cards">
+                    <div class="services__colum">
+                        <img class="services__img--1" src="./images/услуги1.jpg" alt="">
+                        <div class=" services__text">Замена деталей</div>
+                    </div>
+                    <div class="services__colum">
+                        <img class="services__img--2" src="./images/услуги2.jpg" alt="">
+                        <div class=" services__text">Полировка</div>
+                    </div>
 
-        <section class="information">
-            <h2 class="information-title">Подробнее о Центре Автопокраски</h2>
-            <p class="information-subtitle">Полное или частичное восстановление ЛКП за короткие сроки и с гарантией
-                качества</p>
-
-            <div class="information__text">
-                <div class="information__colum">
-                    <span class="information__1234">01</span>
-                    <p class="information__info">Уже 6 лет мы занимаемся качественным
-                        восстановлением машин от повреждений разной сложности. Рейтинг нашей мастерской на Яндексе
-                        составляет 4,5.</p>
+                    <div class="services__colum">
+                        <img class="services__img--3" src="./images/услуги3.jpg" alt="">
+                        <div class=" services__text">Исправление вмятин</div>
+                    </div>
+                    <div class="services__colum">
+                        <img class="services__img--4" src="./images/услуги4.jpg" alt="">
+                        <div class=" services__text">Чистка (мойка)</div>
+                    </div>
+                    <div class="services__colum">
+                        <img class="services__img--5" src="./images/услуги5.jpg" alt="">
+                        <div class=" services__text">Ремонт бамперов</div>
+                    </div>
+                    <div class="services__colum">
+                        <img class="services__img--6" src="./images/услуги6.jpg" alt="">
+                        <div class=" services__text">Сбор-разбор</div>
+                    </div>
+                    <div class="services__colum">
+                        <img class="services__img--7" src="./images/услуги7.jpg" alt="">
+                        <div class=" services__text">Съём</div>
+                    </div>
+                    <div class="services__colum">
+                        <img class="services__img--8" src="./images/услуги8.jpg" alt="">
+                        <div class=" services__text">Покраска</div>
+                    </div>
                 </div>
-                <div class="information__colum">
-                    <span class="information__1234">02</span>
-                    <p class="information__info">Заметили следы естественного износа?
-                        Мы легко удалим царапины, вмятины, коррозию и ржавчину, которые могут изрядно подпортить внешний
-                        вид автомобиля.
-                    </p>
-                </div>
-
-                <div class="information__colum">
-                    <span class="information__1234">03</span>
-                    <p class="information__info">Попали в ДТП и хотите сохранить вид вашего авто? Исправим повреждения
-                        за короткий срок!</p>
-                </div>
-                <div class="information__colum">
-                    <span class="information__1234">04</span>
-                    <p class="information__info">Использование качественных материалов: Sikkens, Akzo, Nobel, Brulex,
-                        3M, Car System, Body Reoflex, позволяет сохранить результат работы надолго. Гарантия на все виды
-                        работ составляет 1 год.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="benefit">
-            <h2>Выгоды</h2>
-            <p class="benefit-subtitle">Ваш автомобиль будет блестеть как после покупки, а вы будете довольны
-                выбором</p>
-            <div class="benefit__desc">
-                <div class="benefit__title">
-                    <img class="img__benefit" src="./images/Иконка 1.1.svg" alt="">
-                    <span class="benefit__text">Удобная локация на Ленинградском шоссе
-                    </span>
-                </div>
-                <div class="benefit__title">
-                    <img class="img__benefit" src="./images/Иконка 2.1.svg" alt="">
-                    <span class="benefit__text">Осмотр автомобиля производится бесплатно</span>
-                </div>
-                <div class="benefit__title">
-                    <img class="img__benefit" src="./images/Иконка 3.1.svg" alt="">
-                    <span class="benefit__text">Для вашего удобства возможен наличный и безналичный расчет </span>
-                </div>
-                <div class="benefit__title">
-                    <img class="img__benefit" src="./images/Иконка 4.1.svg" alt="">
-                    <span class="benefit__text">Работаем по заказ-наряду с предоставлением гарантийных обязательств
-                    </span>
-                </div>
-                <div class="benefit__title">
-                    <img class="img__benefit" src="./images/Иконка 5.1.svg" alt="">
-                    <span class="benefit__text">Для юридических лиц возможна оплата переводом на расчётный счёт </span>
-                </div>
-            </div>
-        </section>
-
-        <section class="services">
-            <h3 class="services-title">Услуги</h3>
-            <p class="services-subtitle">Помимо нанесения лакокрасочных покрытий вы можете получить
-                услуги по ремонту и вернуть своей "ласточке" заводской вид</p>
-
-            <div class="services__cards">
-                <div class="services__colum">
-                    <img class="services__img--1" src="./images/услуги1.jpg" alt="">
-                    <div class=" services__text">Замена деталей</div>
-                </div>
-                <div class="services__colum">
-                    <img class="services__img--2" src="./images/услуги2.jpg" alt="">
-                    <div class=" services__text">Полировка</div>
-                </div>
-
-                <div class="services__colum">
-                    <img class="services__img--3" src="./images/услуги3.jpg" alt="">
-                    <div class=" services__text">Исправление вмятин</div>
-                </div>
-                <div class="services__colum">
-                    <img class="services__img--4" src="./images/услуги4.jpg" alt="">
-                    <div class=" services__text">Чистка (мойка)</div>
-                </div>
-                <div class="services__colum">
-                    <img class="services__img--5" src="./images/услуги5.jpg" alt="">
-                    <div class=" services__text">Ремонт бамперов</div>
-                </div>
-                <div class="services__colum">
-                    <img class="services__img--6" src="./images/услуги6.jpg" alt="">
-                    <div class=" services__text">Сбор-разбор</div>
-                </div>
-                <div class="services__colum">
-                    <img class="services__img--7" src="./images/услуги7.jpg" alt="">
-                    <div class=" services__text">Съём</div>
-                </div>
-                <div class="services__colum">
-                    <img class="services__img--8" src="./images/услуги8.jpg" alt="">
-                    <div class=" services__text">Покраска</div>
-                </div>
-
-            </div>
-            <button class="services__btn">подробнее</button>
-        </section>
-        <section class="reviews">
-            <h4 class="reviews-title">Отзывы клиентов</h4>
-            <p class="reviews-subtitle">Посмотрите на отзывы тех, кто уже обращался в нашу автомастерскую</p>
-            <div class="reviews__desc">
-                <div class="reviews__title">
-                    <img class="img__reviews" src="./images/reviews1.jpg" alt="">
-                </div>
-                <div class="reviews__title">
-                    <img class="img__reviews" src="./images/reviews2.jpg" alt="">
-                </div>
-                <!-- <div class="reviews__title">
-                    <img class="img__reviews" src="././images/reviews1.jpg" alt="">
-                </div>
-                <div class="reviews__title">
-                    <img class="img__reviews" src="././images/reviews2.jpg" alt="">
-                </div> -->
-
-            </div>
-        </section>
-
-        <section class="work">
-            <h3 class="work-title">Примеры работ</h3>
-            <p class="work-subtitle">Наша автомастерская - это семейный бизнес, поэтому мы делаем все как для себя.
-                Качественно. Надолго. Без переплат. Посмотрите примеры выполненных работ,
-                чтобы быть уверенным в надежности специалистов, в руки которых вы передадите автомобиль</p>
-
-            <div class="work__cards">
-
-                <div class="work__colum">
-                    <img class="work__img--1" src="./images/пример1.jpg" alt="">
-                    <!-- <img class="work__img--1" src="./images/пример1,0.jpg" alt=""> -->
-                </div>
-
-                <div class="work__colum">
-                    <img class="work__img--1" src="./images/пример2.jpg" alt="">
-                    <!-- <img class="work__img--1" src="./images/пример2,0.jpg" alt=""> -->
-                </div>
-
-
-                <<div class="work__colum">
-                    <img class="work__img--1" src="./images/пример3.jpg" alt="">
-                    <!-- <img class="work__img--1" src="./images/пример3,0.jpg" alt=""> -->
-            </div>
-            <<div class="work__colum">
-                <img class="work__img--1" src="./images/пример4.jpg" alt="">
-                <!-- <img class="work__img--1" src="./images/пример4.0.jpg" alt=""> -->
-                </div>
-                </div>
-
                 <button class="services__btn">подробнее</button>
-        </section>
-
-    </main>
-
-
-    <footer>
-        <div class="footer__conteiner">
-            <div class="footer__title">Испытайте снова ту радость, когда вы только купили блестящую
-                машинку в салоне! Качественный покрас и ремонт автомобиля
-                - это отличный вариант обновить авто без покупки нового
-                </form>
-            </div>
-
-            <div class="footer__conteiners">
-                <div class="footer__pushBtn">
-                    <span>Вы можете добавить фото для оценки
-                        стоимости ремонта через форму</span>
-                    <button class="footer__btn"><label for="file">Кнопка</label></button>
-                    <input id="file" type="file" style="display: none" />
+            </section>
+            <section class="reviews">
+                <h4 class="reviews-title">Отзывы клиентов</h4>
+                <p class="reviews-subtitle">Посмотрите на отзывы тех, кто уже обращался в нашу автомастерскую</p>
+                <div class="slider-container">
+                    <button class="prev-button" aria-label="Посмотреть предыдущий слайд"><img
+                            src="./images/Иконка лево.svg" alt=""></button>
+                    <div class="slider">
+                        <div class="reviews__img">
+                            <img class="img__reviews" src="./images/reviews1.jpg" alt="">
+                            <img class="img__reviews" src="./images/reviews2.jpg" alt="">
+                        </div>
+                        <div class="reviews__img">
+                            <img class="img__reviews" src="./images/reviews2.jpg" alt="">
+                            <img class="img__reviews" src="./images/reviews1.jpg" alt="">
+                        </div>
+                        <div class="reviews__img">
+                            <img class="img__reviews" src="./images/reviews2.jpg" alt="">
+                        </div>
+                    </div>
+                    <button class="next-button" aria-label="Посмотреть следующий слайд"> <img
+                            src="./images/Иконка право.svg" alt=""></button>
                 </div>
+            </section>
+            <section class="work">
+                <h3 class="work-title">Примеры работ</h3>
+                <p class="work-subtitle">Наша автомастерская - это семейный бизнес, поэтому мы делаем все как для себя.
+                    Качественно. Надолго. Без переплат. Посмотрите примеры выполненных работ,
+                    чтобы быть уверенным в надежности специалистов, в руки которых вы передадите автомобиль</p>
+                <div class="work__cards">
+                    <div class="car"></div>
+                    <div class="car-2"></div>
+                    <div class="car-3"></div>
+                    <div class="car-4"></div>
+                </div>
+                <button class="services__btn">подробнее</button>
+            </section>
+        </main>
+        <footer>
+            <div class="footer__conteiner">
+                <div class="footer__title">Испытайте снова ту радость, когда вы только купили блестящую
+                    машинку в салоне! Качественный покрас и ремонт автомобиля
+                    - это отличный вариант обновить авто без покупки нового
+                    </form>
+                </div>
+                <div class="footer__conteiners">
+                    <div class="footer__pushBtn">
+                        <span>Вы можете добавить фото для оценки
+                            стоимости ремонта через форму</span>
+                        <button class="footer__btn"><label for="file">Добавить фаил</label></button>
+                        <input id="file" type="file" style="display: none" />
+                    </div>
 
-
-                <form action="#" id="form" class="validate-form">
-                    <div class="form-field">
-                        <label for="full-name"></label>
-                        <input class="_req name" type="text" name="full-name" id="full-name" placeholder="Ваше имя" />
-                    </div>
-                    <div class="form-field">
-                        <label for="tel-input"></label>
-                        <input class="_req tel" type="text" name="tel-input" id="tel-input"
-                            placeholder="8-999-999-99-99" />
-                    </div>
-                    <div class="form-field">
-                        <label for=""></label>
-                        <input type="submit" value="Заказать звонок" />
-                    </div>
-                </form>
+                    <form action="#" id="form" class="validate-form">
+                        <div class="form-field">
+                            <label for="full-name"></label>
+                            <input class="_req__name" type="text" name="full-name" id="full-name"
+                                placeholder="Ваше имя" />
+                        </div>
+                        <div class="form-field">
+                            <label for="tel-input"></label>
+                            <input class="_req__tel" type="text" name="tel-input" id="tel-input"
+                                placeholder="8-999-999-99-99" />
+                        </div>
+                        <div class="form-field">
+                            <label for=""></label>
+                            <input type="submit" value="Заказать звонок" />
+                        </div>
+                    </form>
+                </div>
             </div>
-        </div>
 
-        <div class="footer__conteiners--maps">
-            <script type="text/javascript" charset="utf-8" async
-                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A169bdded5a6bb69675da56c0518fd70794bccf9c5323df12c8b5c518340ea92a&amp;width=1440&amp;height=224&amp;lang=ru_RU&amp;scroll=true"></script>
-        </div>
+            <div class="footer__conteiners--maps">
+                <script type="text/javascript" charset="utf-8" async
+                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A169bdded5a6bb69675da56c0518fd70794bccf9c5323df12c8b5c518340ea92a&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
 
-        <!-- <div class="footer__conteiner"> -->
-        <nav class="conteiner__footerNav">
-
-            <ul class="menu__infoFooter">
-                <li class="menu__list--footer">
-                    <img class="logo" src="./images/logo.svg" alt="">
-                </li>
-                <li class="menu__list">
-                    <img src="./images/Иконка.svg" alt="">
-                    <a class="menu__adress" href="#">Москва, Ленинградское шоссе 29-35</a>
-                </li>
-                <li class="menu__list">
-                    <a class="menu__telephone" href="#">Юр. реквизиты</a>
-                </li>
-                <li class="menu__list">
-                    <a class="menu__telephone" href="#">ИНН 026601687198
-                        ОГРН 322774600628427</a>
-                </li>
-                <li class="menu__list">
-                    <a class="menu__telephone" href="#">+7 (901) 704-13-44
-                        +7 (916) 780-22-59</a>
-                </li>
-            </ul>
-            <!-- <div class="adress">
-                    <img src="./images/Иконка.svg" alt="">
-                    <a class="menu__adress" href="#">Москва, Ленинградское шоссе 29-35</a>
-                </div> -->
-            <!-- <div class="telephone">
-                    <a class="menu__telephone" href="#">+7 (901) 704-13-44</a>
-                </div> -->
-        </nav>
-        <!-- </div> -->
-
-    </footer>
+            <nav class="conteiner__footerNav">
+                <ul class="menu__infoFooter">
+                    <li class="menu__list--footer">
+                        <img class="logo" src="./images/logo.svg" alt="">
+                    </li>
+                    <li class="menu__list">
+                        <img src="./images/Иконка.svg" alt="">
+                        <a class="menu__adress" href="#">Москва, Ленинградское шоссе 29-35</a>
+                    </li>
+                    <li class="menu__list">
+                        <a class="menu__telephone" href="#">Юр. реквизиты</a>
+                    </li>
+                    <li class="menu__list">
+                        <a class="menu__telephone" href="#">ИНН 026601687198 <br>
+                            ОГРН 322774600628427</a>
+                    </li>
+                    <li class="menu__list">
+                        <a class="menu__telephone" href="#">+7 (901) 704-13-44 <br>
+                            +7 (916) 780-22-59</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="conteiner__footerNav--690">
+                <ul class="menu__infoFooter">
+                    <li class="menu__list--footer">
+                        <img class="logo" src="./images/logo.svg" alt="">
+                    </li>
+                    <li class="menu__list">
+                        <a class="menu__telephone" href="#">Юр. реквизиты</a><br>
+                        <a class="menu__telephone" href="#"></a><br>
+                        <a class="menu__telephone" href="#">ИНН 026601687198 <br>
+                            ОГРН 322774600628427</a>
+                    </li>
+                    <li class="menu__list--r">
+                        <img class="img__320" src="./images/Иконка.svg" alt="">
+                        <a class="menu__adress" href="#">Москва, Ленинградское шоссе 29-35</a><br>
+                        <a class="menu__telephone" href="#"></a><br>
+                        <a class="menu__telephone" href="#">+7 (901) 704-13-44 <br>
+                            +7 (916) 780-22-59</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="conteiner__footerNav--320">
+                <img class="logo__320" src="./images/logo.svg" alt="">
+                <ul class="menu__infoFooter">
+                    <li class="menu__list--r">
+                        <a class="menu__telephone" href="#">+7 (901) 704-13-44</a>
+                        <a class="menu__adress" href="#">Москва, Ленинградское шоссе 29-35</a>
+                    </li>
+                    <li class="menu__list--l">
+                        <a class="menu__telephone" href="#">Юр. реквизиты</a>
+                        <a class="menu__telephone" href="#">ИНН 026601687198 <br>
+                            ОГРН 322774600628427</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
     <script src="script.js"></script>
-
-
 </body>
 
 </html>
