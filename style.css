@@ -1076,6 +1076,7 @@ input.invalid {
     height: 123px;
     margin: 5px;
     overflow: hidden;
+    gap: 20px;
   }
   .benefit__text {
     text-align: center;
