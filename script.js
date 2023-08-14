@@ -11,23 +11,19 @@ const nextButton = document.querySelector(".next-button");
 const slides = Array.from(slider.querySelectorAll(".reviews__img"));
 const slideCount = slides.length;
 let slideIndex = 0;
-
 // Устанавливаем обработчики событий для кнопок
 prevButton.addEventListener("click", showPreviousSlide);
 nextButton.addEventListener("click", showNextSlide);
-
 // Функция для показа предыдущего слайда
 function showPreviousSlide() {
   slideIndex = (slideIndex - 1 + slideCount) % slideCount;
   updateSlider();
 }
-
 // Функция для показа следующего слайда
 function showNextSlide() {
   slideIndex = (slideIndex + 1) % slideCount;
   updateSlider();
 }
-
 // Функция для обновления отображения слайдера
 function updateSlider() {
   slides.forEach((slide, index) => {
@@ -103,4 +99,14 @@ document.addEventListener("DOMContentLoaded", () => {
 function telTest(input) {
   const re = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
   return re.test(input.value);
+}
+window.addEventListener("scroll", function () {
+  let scroll = this.document.querySelector(".upward");
+  scroll.classList.toggle("active", this.window.scrollTo > 100);
+});
+function scrollTopTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 }
