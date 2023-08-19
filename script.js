@@ -100,13 +100,3 @@ function telTest(input) {
   const re = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
   return re.test(input.value);
 }
-window.addEventListener("scroll", function () {
-  let scroll = this.document.querySelector(".upward");
-  scroll.classList.toggle("active", this.window.scrollTo > 100);
-});
-function scrollTopTop() {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-}
