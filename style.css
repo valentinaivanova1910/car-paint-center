@@ -36,6 +36,12 @@ body {
   line-height: 18.4px;
   color: rgba(255, 255, 255, 1);
 }
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .upward {
   position: fixed;
   bottom: 100px;
@@ -45,13 +51,13 @@ body {
   background: url(./images/knopka-naverh.png);
   background-size: cover;
   cursor: pointer;
-  /* visibility: hidden; */
-  /* opacity: 0; */
+  visibility: hidden; 
+  opacity: 0;
   transition: 0.5s;
-  z-index: 1;
+  z-index: 90;
 }
 .upward.active {
-  /* visibility: visible; */
+ visibility: visible;
   opacity: 1;
   bottom: 400px;
 }
@@ -92,7 +98,7 @@ hr {
   color: #ffffff;
   margin: 0 auto;
   background-position: center center;
-  width: 100%;
+  max-width: 100%;
 }
 
 .burger__menu {

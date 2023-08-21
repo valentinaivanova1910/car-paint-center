@@ -10,10 +10,9 @@
 </head>
 
 <body>
-
-    <div class="container">
-        <div class="upward" onclick="scrollTopTop()"></div>
-        <header class="header">
+    <div class="upward" onclick="scrollTopTop()"></div>
+    <header class="header">
+        <div class="wrapper">
             <nav class="nav">
                 <img class="logo__header" src="./images/logo.svg" alt="">
                 <ul class="nav__list">
@@ -54,7 +53,8 @@
                         Оценить стоимоть ремонта по фото
                     </button>
                 </div>
-                <p class="top__text">Оставляйте заявку сейчас <br> и получите <span class="red">10 % скидку</span> на
+                <p class="top__text">Оставляйте заявку сейчас <br> и получите <span class="red">10 % скидку</span>
+                    на
                     покраску</p>
             </div>
             <div class="advantage">
@@ -72,11 +72,14 @@
                     <img class="img__advantage" src="./images/advantage-3.svg" alt="">
                     <img class="img__advantage--bleak" src="./images/Иконка 1.1.svg" alt="">
                     <span>Салон расположен <br> в пределах МКАД </span>
+
                 </div>
             </div>
-        </header>
-        <main class="main">
-            <section class="information">
+        </div>
+    </header>
+    <main class="main">
+        <section class="information">
+            <div class="wrapper">
                 <h2 class="information-title">Подробнее о Центре Автопокраски</h2>
                 <p class="information-subtitle">Полное или частичное восстановление ЛКП за короткие сроки и с гарантией
                     качества</p>
@@ -110,8 +113,10 @@
                             работ составляет 1 год.</p>
                     </div>
                 </div>
-            </section>
-            <section class="benefit">
+            </div>
+        </section>
+        <section class="benefit">
+            <div class="wrapper">
                 <h2>Выгоды</h2>
                 <p class="benefit-subtitle">Ваш автомобиль будет блестеть как после покупки, а вы будете довольны
                     выбором</p>
@@ -140,8 +145,10 @@
                         </span>
                     </div>
                 </div>
-            </section>
-            <section class="services">
+            </div>
+        </section>
+        <section class="services">
+            <div class="wrapper">
                 <h3 class="services-title">Услуги</h3>
                 <p class="services-subtitle">Помимо нанесения лакокрасочных покрытий вы можете получить
                     услуги по ремонту и вернуть своей "ласточке" заводской вид</p>
@@ -181,8 +188,10 @@
                     </div>
                 </div>
                 <button class="services__btn">подробнее</button>
-            </section>
-            <section class="reviews">
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="wrapper">
                 <h4 class="reviews-title">Отзывы клиентов</h4>
                 <p class="reviews-subtitle">Посмотрите на отзывы тех, кто уже обращался в нашу автомастерскую</p>
                 <div class="slider-container">
@@ -204,8 +213,10 @@
                     <button class="next-button" aria-label="Посмотреть следующий слайд"> <img
                             src="./images/Иконка право.svg" alt=""></button>
                 </div>
-            </section>
-            <section class="work">
+            </div>
+        </section>
+        <section class="work">
+            <div class="wrapper">
                 <h3 class="work-title">Примеры работ</h3>
                 <p class="work-subtitle">Наша автомастерская - это семейный бизнес, поэтому мы делаем все как для себя.
                     Качественно. Надолго. Без переплат. Посмотрите примеры выполненных работ,
@@ -217,10 +228,12 @@
                     <div class="car-4"></div>
                 </div>
                 <button class="services__btn">подробнее</button>
-            </section>
-        </main>
-        <footer>
-            <div class="footer__conteiner">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__conteiner">
+            <div class="wrapper">
                 <div class="footer__title">Испытайте снова ту радость, когда вы только купили блестящую
                     машинку в салоне! Качественный покрас и ремонт автомобиля
                     - это отличный вариант обновить авто без покупки нового
@@ -252,17 +265,15 @@
                             <input type="submit" value="Заказать звонок" />
                         </div>
 
-                        <button><label for="file">Кнопка</label></button>
-                        <input id="file" type="file" style="display: none" />
+                        <!-- <button><label for="file">Кнопка</label></button>
+                        <input id="file" type="file" style="display: none" /> -->
                     </form>
                 </div>
-            </div>
 
-            <div class="footer__conteiners--maps">
-                <script type="text/javascript" charset="utf-8" async
-                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A169bdded5a6bb69675da56c0518fd70794bccf9c5323df12c8b5c518340ea92a&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
-            </div>
-
+                <div class="footer__conteiners--maps">
+                        <script type="text/javascript" charset="utf-8" async
+                            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A169bdded5a6bb69675da56c0518fd70794bccf9c5323df12c8b5c518340ea92a&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
             <nav class="conteiner__footerNav">
                 <ul class="menu__infoFooter">
                     <li class="menu__list--footer">
@@ -319,8 +330,9 @@
                     </li>
                 </ul>
             </nav>
-        </footer>
+        </div>
     </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 
