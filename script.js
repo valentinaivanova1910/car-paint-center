@@ -100,3 +100,21 @@ function telTest(input) {
   const re = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
   return re.test(input.value);
 }
+
+const scrollBtn = document.querySelector(".btn");
+const btnVisibility = () => {
+  if (window.scrollY > 400) {
+    scrollBtn.style.visibility = "visible";
+  } else {
+    scrollBtn.style.visibility = "hidden";
+  }
+};
+document.addEventListener("scroll", () => {
+  btnVisibility();
+});
+scrollBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
