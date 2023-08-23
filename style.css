@@ -76,23 +76,6 @@ body {
   border: 2px solid #551b54;
 }
 
-/* @keyframes movebtn {
-  0% {
-    transform: translateY(0px);
-  }
-  25% {
-    transform: translateY(20px);
-  }
-  50% {
-    transform: translateY(0px);
-  }
-  75% {
-    transform: translateY(-20px);
-  }
-  100% {
-    transform: translateY(0px);
-  } */
-/* } */
 .header {
   background-image: url(./images/Mask\ group.jpg);
   background-repeat: no-repeat;
@@ -107,8 +90,8 @@ body {
 }
 
 .menu__telephones {
-  padding-right: 85px;
-  padding-left: 83px;
+  
+  padding-left: 42px;
 }
 .menu__telephone--2 {
   display: none;
@@ -116,13 +99,16 @@ body {
 .img__advantage--bleak {
   display: none;
 }
+.adress{
+  padding-left: 160px;
+}
 hr {
   border: 2px solid rgba(255, 255, 255, 1);
   max-width: 100%;
 }
 .div {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .nav {
   position: relative;
@@ -139,7 +125,7 @@ hr {
 
 .contaiers {
   padding-left: 225px;
-  padding-right: 650px;
+  padding-right: 690px;
 }
 
 .title {
@@ -944,6 +930,9 @@ input.invalid {
     text-align: start;
     padding: 0px;
   }
+  .menu__telephones {
+    padding-left: 0px;
+}
   .menu__telephone {
     padding-right: 0px;
     padding-bottom: 16px;
